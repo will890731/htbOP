@@ -1,3 +1,8 @@
+Perfection
+ssh susan@10.10.11.253
+susan_nasus_413759210
+sudo cat /root/root.txt
+
 Analytics
 ssh metalytics@10.10.11.233
 password: An4lytics_ds20223#

